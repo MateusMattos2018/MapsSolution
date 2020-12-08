@@ -1,0 +1,289 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reclamar.ReclamarFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#DCDBDB"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Faça sua reclamação"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_nome"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/input_form"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomStart="1dp"
+        app:boxCornerRadiusTopEnd="1dp"
+        app:boxCornerRadiusTopStart="1dp"
+        app:boxStrokeColor="@color/input_form_text_hint"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/input_form_text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_nome"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="none"
+            android:background="@null"
+            android:drawableBottom="@null"
+            android:gravity="bottom"
+            android:hint="@string/text_nome"
+            android:inputType="textNoSuggestions|text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/input_form_text"
+            android:textColorHighlight="@null"
+            android:textColorHint="@null"
+            android:textColorLink="@null"
+            android:textCursorDrawable="@null"
+            app:boxBackgroundMode="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/image_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_telefone"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/input_form"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomStart="1dp"
+        app:boxCornerRadiusTopEnd="1dp"
+        app:boxCornerRadiusTopStart="1dp"
+        app:boxStrokeColor="@color/input_form_text_hint"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/input_form_text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_telefone"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="none"
+            android:background="@null"
+            android:drawableBottom="@null"
+            android:gravity="bottom"
+            android:hint="@string/text_telefone"
+            android:inputType="textNoSuggestions|number|text"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/input_form_text"
+            android:textColorHighlight="@null"
+            android:textColorHint="@null"
+            android:textColorLink="@null"
+            android:textCursorDrawable="@null"
+            app:boxBackgroundMode="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/image_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ic_baseline_local_phone_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_endereco"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/input_form"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomStart="1dp"
+        app:boxCornerRadiusTopEnd="1dp"
+        app:boxCornerRadiusTopStart="1dp"
+        app:boxStrokeColor="@color/input_form_text_hint"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/input_form_text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_endereco"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="none"
+            android:background="@null"
+            android:drawableBottom="@null"
+            android:gravity="bottom"
+            android:hint="@string/text_endereco"
+            android:inputType="textNoSuggestions|number"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/input_form_text"
+            android:textColorHighlight="@null"
+            android:textColorHint="@null"
+            android:textColorLink="@null"
+            android:textCursorDrawable="@null"
+            app:boxBackgroundMode="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/image_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ic_baseline_location_on_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_detalhamento"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/input_form"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomStart="1dp"
+        app:boxCornerRadiusTopEnd="1dp"
+        app:boxCornerRadiusTopStart="1dp"
+        app:boxStrokeColor="@color/input_form_text_hint"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/input_form_text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_detalhamento"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="none"
+            android:background="@null"
+            android:drawableBottom="@null"
+            android:gravity="bottom|center|start"
+            android:hint="@string/text_observacao"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:textColor="@color/input_form_text"
+            android:textColorHighlight="@null"
+            android:textColorHint="@null"
+            android:textColorLink="@null"
+            android:textCursorDrawable="@null"
+            app:boxBackgroundMode="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/image_detalhamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/ic_baseline_record_voice_over_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_id_solicitacao"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/input_form"
+        android:gravity="center_vertical"
+        android:hint="@string/id_solicitacao"
+        android:textColor="@color/input_form_text"
+        android:textColorHighlight="@null"
+        android:textColorHint="@null"
+        android:textColorLink="@null"
+        android:textCursorDrawable="@null"
+        android:textSize="18sp"
+        app:boxBackgroundColor="@color/input_form"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomStart="1dp"
+        app:boxCornerRadiusTopEnd="1dp"
+        app:boxCornerRadiusTopStart="1dp"
+        app:boxStrokeColor="@color/input_form_text_hint"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/input_form_text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_solicitacao"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <ImageView
+        android:id="@+id/image_solicitacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/ic_baseline_assignment_turned_in_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:text="@string/btn_enviar"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

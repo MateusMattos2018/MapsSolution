@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_andamento">
+
+    <fragment
+        android:id="@+id/navigation_andamento"
+        android:name="com.example.solutionmaps.ui.andamento.AndamentoFragment"
+        android:label="@string/title_pagina_andamento"
+        tools:layout="@layout/fragment_andamento" />
+
+    <fragment
+        android:id="@+id/navigation_reclamar"
+        android:name="com.example.solutionmaps.ui.reclamar.ReclamarFragment"
+        android:label="@string/title_reclamar"
+        tools:layout="@layout/fragment_reclamar" />
+
+    <fragment
+        android:id="@+id/navigation_notificacoes"
+        android:name="com.example.solutionmaps.ui.notificacoes.NotificacoesFragment"
+        android:label="@string/title_notificacoes"
+        tools:layout="@layout/fragment_notificacoes" />
+</navigation>

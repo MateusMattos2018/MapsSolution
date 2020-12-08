@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Solution Maps</string>
+    <string name="title_andamento">Andamento das Solicitações</string>
+    <string name="title_pagina_andamento">Solicitações</string>
+    <string name="title_reclamar">Reclamar</string>
+    <string name="title_notificacoes">Notificações</string>
+    <string name="title_notificacao">Notificações do andamento das obras</string>
+    <string name="text_nome">Nome Completo</string>
+    <string name="text_telefone">Telefone com ddd</string>
+    <string name="text_area">Area</string>
+    <string name="text_endereco">CEP EX: 04256123</string>
+    <string name="text_observacao">Detalhe a sua reclamação</string>
+    <string name="id_solicitacao">ID Solicitação</string>
+    <string name="btn_enviar">Registrar</string>
+</resources>

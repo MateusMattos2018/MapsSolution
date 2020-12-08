@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_andamento"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Andamento" />
+    <item
+        android:id="@+id/navigation_reclamar"
+        android:icon="@drawable/ic_baseline_record_voice_over_24"
+        android:title="Reclamar" />
+    <item
+        android:id="@+id/navigation_notificacoes"
+        android:icon="@drawable/ic_baseline_warning_24"
+        android:title="Notificações" />
+</menu>

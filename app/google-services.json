@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "769999590604",
+    "firebase_url": "https://sodium-ceremony-291023.firebaseio.com",
+    "project_id": "sodium-ceremony-291023",
+    "storage_bucket": "sodium-ceremony-291023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769999590604:android:836aecb02e115684ac5e69",
+        "android_client_info": {
+          "package_name": "com.example.solutionmaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769999590604-onkqhr1s8ij0t93uedco3spflkem75d8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGBGBi-kJmMW0J61AFl3dWuwFrZCq6CNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769999590604-onkqhr1s8ij0t93uedco3spflkem75d8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
